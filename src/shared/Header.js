@@ -29,9 +29,10 @@ const Header = () => {
       <div className="bg-[#EB4438] text-white text-sm font-semibold py-3">
         <div className="flex justify-between container mx-auto">
           <p>Welcome to The Dynamic Export Import LTD</p>
-          <p className="flex items-center">
-            <MdLocationOn /> Mastarpara Socity, Road 1230
-          </p>
+          <div className="flex items-center gap-1">
+            <MdLocationOn/> 
+            <p>Mastarpara Socity, Road 1230</p>
+          </div>
         </div>
       </div>
       {/* navbar */}
