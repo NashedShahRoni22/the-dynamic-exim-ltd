@@ -22,7 +22,7 @@ const cards = [
 const HomeProduction = () => {
   return (
     <section className="py-10 mx-5">
-      <h2 className="text-center text-3xl mb-10 font-semibold">
+      <h2 className="text-center text-3xl mb-10 font-extrabold">
         WE GIVE TOP PRODUCTION <br />
         FROM EVERY ANGLE.
       </h2>
@@ -41,7 +41,7 @@ const HomeProduction = () => {
         ))}
       </div>
       <div>
-        <h2 className="text-center text-3xl mb-10 font-semibold mt-10">
+        <h2 className="text-center text-3xl mb-10 font-extrabold mt-10">
           WHO ARE WE?
         </h2>
         <div className="grid gap-8 lg:gap-8 lg:grid-cols-2 items-center">

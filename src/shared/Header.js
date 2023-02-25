@@ -5,7 +5,7 @@ import logo from "../images/logo.webp";
 const menuItems = (
   <>
     <li>
-      <Link>Home</Link>
+      <Link to={"/"}>Home</Link>
     </li>
     <li>
       <Link>About</Link>
@@ -14,7 +14,7 @@ const menuItems = (
       <Link>Products</Link>
     </li>
     <li>
-      <Link>Gallery</Link>
+      <Link to={'/gallery'}>Gallery</Link>
     </li>
     <li>
       <Link>Contact</Link>
@@ -26,12 +26,12 @@ const Header = () => {
   return (
     <section>
       {/* topbar */}
-      <div className="bg-[#EB4438] text-white text-sm font-semibold py-3">
-        <div className="flex justify-between container mx-auto">
+      <div className="hidden md:block bg-[#EB4438] text-white text-sm font-semibold py-3">
+        <div className="flex justify-between items-center container mx-auto">
           <p>Welcome to The Dynamic Export Import LTD</p>
           <div className="flex items-center gap-1">
-            <MdLocationOn/> 
-            <p>Mastarpara Socity, Road 1230</p>
+            <MdLocationOn className="text-3xl"/> 
+            <p>Office: House #874/D (Ground Floor)<br />Master para, Uttarkhan, Dhaka-1230</p>
           </div>
         </div>
       </div>
