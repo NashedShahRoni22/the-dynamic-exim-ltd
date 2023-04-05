@@ -122,7 +122,7 @@ const HomeCorporationValue = () => {
             </ul>
           </div>
           <div>
-            <img src={valueImage} alt="" className="h-96 animate-pulse" />
+            <img src={valueImage} alt="" className="h-96" />
           </div>
         </div>
       </section>

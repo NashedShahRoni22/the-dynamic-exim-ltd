@@ -1,6 +1,5 @@
 import React from "react";
-import factoryImage from "../images/factory (2).jpg";
-import { Typewriter } from "react-simple-typewriter";
+import HomeWhoAreWe from "./HomeWhoAreWe";
 const cards = [
   {
     header:
@@ -21,7 +20,7 @@ const cards = [
 
 const HomeProduction = () => {
   return (
-    <section className="py-10 mx-5">
+    <div className="py-10 mx-5">
       <h2 className="text-center text-3xl mb-10 font-extrabold">
         WE GIVE TOP PRODUCTION <br />
         FROM EVERY ANGLE.
@@ -40,64 +39,8 @@ const HomeProduction = () => {
           </div>
         ))}
       </div>
-      <div>
-        <h2 className="text-center text-3xl mb-10 font-extrabold mt-10">
-          WHO ARE WE?
-        </h2>
-        <div className="grid gap-8 lg:gap-8 lg:grid-cols-2 items-center">
-          <div className="relative">
-            <img src={factoryImage} alt="" className="rounded-xl shadow-xl" />
-            <p className="font-bold lg:text-xl bg-white shadow-xl w-fit p-1 md:p-4 rounded-lg absolute z-10  -bottom-5 -right-5">
-              <span className="text-[#EB4438] text-3xl md:text-5xl">5+</span>
-              YEARS OF <br /> EXPERIENCE
-            </p>
-            <div className="absolute z-20 h-full w-full top-0 flex items-center justify-center">
-              <p className="text-white text-xl md:text-4xl font-extrabold">
-                <Typewriter
-                  words={["The Dynamic Export Import LTD"]}
-                  loop={""}
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                />
-              </p>
-            </div>
-            <div className="h-full w-full bg-[#0b2239] absolute top-0 rounded-xl opacity-70"></div>
-          </div>
-          <p className="text-justify text-sm lg:text-lg">
-            <span className="font-bold text-[#EB4438]">
-              The Dynamic Export Import Company Ltd. started its operation in
-              Bangladesh in the year 2017.
-            </span>{" "}
-            Its initial role was to source for competitive but quality priced
-            garments accessories commodities for the domestic market to support
-            Bangladesh's. Within a very short time the company was able to
-            establish business partnership with some of the leading
-            manufacturers from{" "}
-            <span className="font-bold text-[#EB4438]">
-              Europe, USA & Canada
-            </span>{" "}
-            working as a local agent in Bangladesh supplying quality products.
-            Later on, the company created export markets for locally
-            manufactured products, and promote external trade.
-            <br />
-            “Dynamic” that could be materialized as "A Single Source Solution"
-            from. Manufacturing, export, import, local distribution,
-            commissioning & after sales services. Our sincere thanks & great
-            appreciation to our prestigious clients for their generous support &
-            cooperation that has led to this achievement. We are always open to
-            opportunities and look forward in providing you with even a greater
-            range of products and more efficient services to your specific
-            requirements. May our goal become more fruitful so do our potential
-            & valued clients become more satisfied with our quality products &
-            our services and that would be the greatest achievements of all
-            which we look forward to in the days to come.
-          </p>
-        </div>
-      </div>
-    </section>
+      <HomeWhoAreWe />
+    </div>
   );
 };
 

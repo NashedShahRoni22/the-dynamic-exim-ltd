@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="flex items-center gap-4">
           <AiOutlineMail className="text-3xl" />
           <p>
-            moin_dynamic201718@yahoo.com. <br /> moin@dynamic-exim.com
+            moin_dynamic201718@yahoo.com <br /> moin@dynamic-exim.com
           </p>
         </div>
       </div>

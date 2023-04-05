@@ -27,11 +27,11 @@ const Gallery = () => {
       <h2 className="text-center text-3xl mb-10 font-extrabold mt-10">
         Our Factory
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div className="pb-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         <PhotoProvider>
           {products.map((p, i) => (
             <PhotoView key={i} src={p.img}>
-              <img class="h-64 w-full object-cover" src={p.img} alt="" className="rounded-lg"/>
+              <img class="h-64 w-full object-cover rounded-xl shadow-xl cursor-pointer" src={p.img} alt="" className="rounded-lg"/>
             </PhotoView>
           ))}
         </PhotoProvider>
