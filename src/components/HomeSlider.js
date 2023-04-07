@@ -50,7 +50,7 @@ const HomeSlider = () => {
           </div>
         </div>
         {/* <div className="absolute h-12 w-12 bg-[#0B2239] rounded-full"></div> */}
-        <div className="absolute h-12 w-12 bg-[#EB4438] rounded-full top-1/4 left-5"></div>
+        <div className="hidden lg:block absolute h-12 w-12 bg-[#EB4438] rounded-full top-1/4 left-5"></div>
         <div className="hidden lg:block absolute h-24 w-24 bg-[#EB4438] rounded-full top-1/2 left-5 animate-bounce"></div>
         <div className="hidden lg:block absolute h-16 w-16 bg-[#0B2239] rounded-full top-1/3 right-5 animate-bounce"></div>
       </div>
