@@ -5,11 +5,25 @@ import { Typewriter } from "react-simple-typewriter";
 const HomeWhoAreWe = () => {
   return (
     <div id="about" className="mx-5">
-      <h2 className="text-center text-3xl mb-10 font-extrabold mt-10">
+      <h2
+        className="text-center text-3xl mb-10 font-extrabold mt-10"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         WHO ARE WE?
       </h2>
       <div className="grid gap-8 lg:gap-8 lg:grid-cols-2 items-center">
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <img src={factoryImage} alt="" className="rounded-xl shadow-xl" />
           <p className="font-bold lg:text-xl bg-white shadow-xl w-fit p-1 md:p-4 rounded-lg absolute z-10  -bottom-5 -right-5">
             <span className="text-[#EB4438] text-3xl md:text-5xl">5+</span>
@@ -30,7 +44,14 @@ const HomeWhoAreWe = () => {
           </div>
           <div className="h-full w-full bg-[#0b2239] absolute top-0 rounded-xl opacity-70"></div>
         </div>
-        <p className="text-justify text-sm lg:text-lg">
+        <p
+          className="text-justify text-sm lg:text-lg"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <span className="font-bold text-[#EB4438]">
             The Dynamic Export Import Company Ltd. started its operation in
             Bangladesh in the year 2017.
@@ -58,11 +79,25 @@ const HomeWhoAreWe = () => {
           to come.
         </p>
       </div>
-      <h2 className="text-center text-3xl font-extrabold mt-20">
+      <h2
+        className="text-center text-3xl font-extrabold mt-20"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         Meet Our Officials
       </h2>
       <div className="grid gap-4 md:grid-cols-2 items-center mt-10">
-        <div className="relative group">
+        <div
+          className="relative group"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <div>
             <img
               src="https://i.ibb.co/1KnHXz2/moin2.jpg"
@@ -77,7 +112,14 @@ const HomeWhoAreWe = () => {
             </div>
           </div>
         </div>
-        <p className="text-justify text-black">
+        <p
+          className="text-justify text-black"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           As an elastic business owner, I understand the importance of being
           flexible and adaptable in today's ever-changing business landscape. I
           believe that success in business comes not just from having a great

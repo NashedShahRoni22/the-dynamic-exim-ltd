@@ -24,14 +24,35 @@ const products = [
 const Gallery = () => {
   return (
     <section className="container mx-auto">
-      <h2 className="text-center text-3xl mb-10 font-extrabold mt-10">
+      <h2
+        className="text-center text-3xl mb-10 font-extrabold mt-10"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         Our Factory
       </h2>
       <div className="pb-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         <PhotoProvider>
           {products.map((p, i) => (
-            <PhotoView key={i} src={p.img}>
-              <img class="h-64 w-full object-cover rounded-xl shadow-xl cursor-pointer" src={p.img} alt="" className="rounded-lg"/>
+            <PhotoView
+              key={i}
+              src={p.img}
+              className="shadow-xl rounded-xl bg-base-200"
+            >
+              <img
+                class="h-64 w-full object-cover rounded-xl shadow-xl cursor-pointer"
+                src={p.img}
+                alt=""
+                className="rounded-lg"
+                data-aos="zoom-in-down"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              />
             </PhotoView>
           ))}
         </PhotoProvider>

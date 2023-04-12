@@ -63,15 +63,34 @@ const products = [
 const Products = () => {
   return (
     <section className="container mx-auto">
-      <h2 className="text-center text-3xl my-10 font-extrabold">
+      <h2
+        className="text-center text-3xl my-10 font-extrabold"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         Our Products
       </h2>
       <div className="mx-5 pb-20 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">
         <PhotoProvider>
-          {products.map((p,i) => (
-            <div key={i} className="shadow-xl rounded-xl bg-base-200">
+          {products.map((p, i) => (
+            <div
+              key={i}
+              className="shadow-xl rounded-xl bg-base-200"
+              data-aos="zoom-in-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <PhotoView key={i} src={p.img}>
-                <img src={p.img} alt="" className="w-full rounded-t-xl cursor-pointer" />
+                <img
+                  src={p.img}
+                  alt=""
+                  className="w-full rounded-t-xl cursor-pointer"
+                />
               </PhotoView>
               <p className="p-4 font-semibold">{p.name}</p>
             </div>

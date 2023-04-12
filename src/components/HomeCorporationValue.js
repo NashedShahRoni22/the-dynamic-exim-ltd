@@ -58,10 +58,24 @@ const HomeCorporationValue = () => {
   return (
     <>
       <section className="py-5 mx-5">
-        <h2 className="text-center text-3xl mb-10 font-extrabold">
+        <h2
+          className="text-center text-3xl mb-10 font-extrabold"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           CORPORATE VALUE
         </h2>
-        <p className="text-center">
+        <p
+          className="text-center"
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           As a global enterprise, Our corporate values set the foundation <br />{" "}
           of business methodologies and guide us towards our vision:
         </p>
@@ -69,7 +83,12 @@ const HomeCorporationValue = () => {
           {values.map((v, i) => (
             <div
               key={i}
-              className="hover:shadow-xl flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:mx-5 gap-2 border p-4 rounded-xl"
+              className="hover:shadow-xl flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:mx-5 gap-2 hover:border p-4 rounded-xl"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
             >
               <img src={v.img} alt="" className="h-12 lg:h-16 w-12 lg:w-16" />
               <p className="text-center font-semibold text-sm lg:text-xl">
@@ -80,12 +99,26 @@ const HomeCorporationValue = () => {
         </div>
       </section>
       <section className="py-5 mx-5">
-        <h2 className="text-center text-3xl mb-10 font-extrabold">OUR BUYERS</h2>
+        <h2
+          className="text-center text-3xl mb-10 font-extrabold"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
+          OUR BUYERS
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-5">
           {buyers.map((v, i) => (
             <div
               key={i}
-              className="hover:bg-[#EB4438] hover:text-white cursor-pointer shadow-xl border rounded-xl p-4 md:p-8"
+              className="hover:bg-[#EB4438] hover:text-white cursor-pointer shadow-xl border border-[#EB4438] rounded-xl p-4 md:p-8"
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
             >
               <p className="text-center font-extrabold md:text-3xl">{v.name}</p>
             </div>
@@ -93,7 +126,14 @@ const HomeCorporationValue = () => {
         </div>
       </section>
       <section className="py-5 mx-5">
-        <h2 className="text-center text-3xl mb-10 font-extrabold">
+        <h2
+          className="text-center text-3xl mb-10 font-extrabold"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           Value Propositions
         </h2>
         <div className="grid md:grid-cols-2 items-center">
@@ -160,8 +200,8 @@ const HomeCorporationValue = () => {
           elastic you’ve worked with.
         </p>
         <div className="py-5 grid md:grid-cols-2 gap-6 items-center place-items-center">
-        <div>
-            <img src={quesImage} alt="" className="w-96 rounded-xl shadow-xl"/>
+          <div>
+            <img src={quesImage} alt="" className="w-96 rounded-xl shadow-xl" />
           </div>
           <div>
             <div
@@ -207,7 +247,6 @@ const HomeCorporationValue = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
     </>

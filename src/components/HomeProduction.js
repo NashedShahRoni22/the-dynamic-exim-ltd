@@ -21,11 +21,25 @@ const cards = [
 const HomeProduction = () => {
   return (
     <div className="py-10 mx-5">
-      <h2 className="text-center text-3xl mb-10 font-extrabold">
+      <h2
+        className="text-center text-3xl mb-10 font-extrabold"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         WE GIVE TOP PRODUCTION <br />
         FROM EVERY ANGLE.
       </h2>
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div
+        className="grid gap-4 lg:grid-cols-3"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
         {cards.map((c, i) => (
           <div
             key={i}
