@@ -3,7 +3,7 @@ import React from "react";
 const HomeSlider = () => {
   return (
     <section>
-      <div className="carousel w-full h-[50vh] bg-base-300 py-5">
+      <div className="carousel w-full h-[60vh] lg:h-[80vh] bg-base-300 py-5">
         <div id="slide1" className="carousel-item relative w-full">
           <div className="absolute flex gap-4 right-5 bottom-0">
             <a
